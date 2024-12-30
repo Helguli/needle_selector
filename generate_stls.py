@@ -1,5 +1,10 @@
 import os
 
+# One row - one object
+# Read like this:
+#       upper part: 1 tooth, 2 spaces
+#       lower part: 2 teeth, 1 space
+# You may create your own patterns
 patterns = (
         ((1,2),(2,1)),
         ((1,7),(3,1)),
