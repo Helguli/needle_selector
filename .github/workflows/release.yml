@@ -20,6 +20,12 @@ jobs:
         mkdir stl
         python generate_stls.py
 
+    - name: Upload STL files
+      uses: actions/upload-artifact@v4
+      with:
+        name: stl-files
+        path: stl/
+
     - name: Create release and upload assets
       uses: ncipollo/release-action@v1
       with:
