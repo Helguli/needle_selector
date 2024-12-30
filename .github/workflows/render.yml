@@ -20,6 +20,7 @@ jobs:
     - name: Render OpenSCAD files to STL
       run: |
         mkdir stl
+        ls
         python generate_stls.py
     - name: Upload STL files
       uses: actions/upload-artifact@v4
